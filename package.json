@@ -9,9 +9,11 @@
     "start": "mdx-deck deck/index.mdx",
     "build": "mdx-deck build deck/index.mdx --basepath='/react-jsp-slides'",
     "gh-deploy": "gh-pages -d dist",
-    "deploy": "npm run build && npm run gh-deploy"
+    "deploy": "npm run build && npm run gh-deploy",
+    "pdf": "website-pdf http://localhost:8080/print -o deck.pdf"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "website-pdf": "^3.0.8"
   }
 }
