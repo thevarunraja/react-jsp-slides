@@ -192,7 +192,7 @@ const custom = {
       }
     },
     h1: {
-      fontFamily: "Futura STD, sans-serif",
+      fontFamily: "Futura STD, Open Sans, sans-serif",
       letterSpacing: 5
     }
   },
@@ -201,7 +201,7 @@ const custom = {
     background: "#272c35",
     primary: "blue"
   },
-  font: "Dank Mono, sans-serif",
+  font: "Dank Mono, Open Sans, sans-serif",
   components: {
     code: Code
   },

@@ -1,15 +1,15 @@
 export { default as theme } from "../theme";
 import { Notes, Image } from "mdx-deck";
 
-# What is React?🤔
+# React 🤔
 
-### JavaScript library for building user interfaces.
+### A JavaScript library for building user interfaces.
 
 ---
 
-### What is a React Component?
+### React Component?
 
-- React Component is a JavaScript function that returns html.
+- Think of React Component as a function that returns some HTML
 
 ```jsx
 function HelloWorld() {
@@ -50,17 +50,28 @@ window.renderHelloWorld = function renderHelloWorld(mountId, addInfo) {
 
 ---
 
-### How are we using React on our project?
+- You just say what you want to render on the page and give us the necessary data(from API or send data as a parameter to the function), React will render it on the page.
+
+<Image
+  src="https://firebasestorage.googleapis.com/v0/b/thevarunraja-learning.appspot.com/o/react-jsp.png?alt=media&token=25828ca7-ceba-42fc-823e-0a6f1219d085"
+  style={{
+    display: "flex",
+    width: 500,
+    height: 500,
+    margin: `0 auto`
+  }}
+/>
+
+---
+
+### How are we using React on our project
 
 - We are not building the whole page in React(that's the traditional way).
-- We are identifying components on the page and converting one or two components into React and integrating them back to the page.
-- So our page will contain both legacy components(jQuery + HTML) and the new React components and we need to make sure that the legacy and new React components can talk to each other.
+- As we are slowly moving towards React, our page will contain both legacy components(jQuery + HTML) and the new React components.
 
 ---
 
 ### Are any others following the same approach?
-
-- Yes
 
 ---
 
@@ -113,21 +124,8 @@ window.renderHelloWorld = function renderHelloWorld(mountId, addInfo) {
 
 ---
 
-- You just say what you want to render on the page and give us the necessary data(from API or send data as a parameter to the function), we will render it on the page.
+### Future Stack?
 
-<Image
-  src="https://firebasestorage.googleapis.com/v0/b/thevarunraja-learning.appspot.com/o/react-jsp.png?alt=media&token=25828ca7-ceba-42fc-823e-0a6f1219d085"
-  style={{
-    display: "flex",
-    width: 500,
-    height: 500,
-    margin: `0 auto`
-  }}
-/>
-
----
-
-### Advantages
-
-- Easy to move to a headless commerce architecture
-- Single Page Application (fast - as only data is transferred)
+- Single Page Application(SPA) - no page reloads
+- Easy to move towards a "Headless Commerce Architecture".
+- Front End Stack would be JAM(JavaScript, API's and Markup)

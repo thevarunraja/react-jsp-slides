@@ -1,14 +1,17 @@
 {
   "name": "react-jsp-integration-demo",
   "version": "1.0.0",
-  "main": "",
-  "license": "MIT",
   "dependencies": {
     "mdx-deck": "^2.3.2",
     "prism-react-renderer": "^0.1.6"
   },
   "scripts": {
     "start": "mdx-deck deck/index.mdx",
-    "build": "mdx-deck build deck/index.mdx"
+    "build": "mdx-deck build deck/index.mdx --basepath='/react-jsp-integration-slides'",
+    "gh-deploy": "gh-pages -d dist",
+    "deploy": "npm run build && npm run gh-deploy"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
