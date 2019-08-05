@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "mdx-deck deck/index.mdx",
-    "build": "mdx-deck build deck/index.mdx --basepath='/react-jsp-integration-slides'",
+    "build": "mdx-deck build deck/index.mdx --basepath='/react-jsp-slides'",
     "gh-deploy": "gh-pages -d dist",
     "deploy": "npm run build && npm run gh-deploy"
   },
